@@ -38,6 +38,7 @@ public class CacheConfiguration {
             cm.createCache(io.prajeshananthan.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(io.prajeshananthan.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(io.prajeshananthan.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(io.prajeshananthan.domain.Task.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
